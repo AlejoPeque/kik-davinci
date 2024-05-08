@@ -1,9 +1,10 @@
-// Promt : Name : Genre : Age
 // 1. Preguntar el nombre, no puede ser nulo y elimina espacios en blanco
 const name = prompt("Cual es tu nombre?").trim();
+
 // 2. Preguntar el genero como default es masculino
 let genre =
   prompt("Cual es tu genero?", "Masculino").toLowerCase().trim() || "masculino";
+
 // 3. Preguntar la edad, no puede ser nulo y debe ser un entero positivo
 let age = parseInt(prompt("Cual es tu edad?", 18));
 while (isNaN(age) || age <= 0) {
@@ -11,26 +12,27 @@ while (isNaN(age) || age <= 0) {
   age = parseInt(prompt("Cual es tu edad?", 18));
 }
 
-
-// 5. Mostrar el nombre
+// 4. Mostrar el nombre
 document.getElementById("presentation").innerText = name
   ? `${name}, estos son los productos pensados para vos`
   : "Estos son algunos de nuestros productos";
 
-// 6. Proceso de seleccion de productos y banner segun genero y edad
+// 5. Proceso de seleccion de productos y banner segun genero y edad
 switch (genre) {
-  // Femenino *******************************************************************************************************************************
+  // Femenino
   case "femenino":
     // Cambiar el color de fondo del body
     document.getElementById("body").classList.add("bgPrincipalWomen");
     // Banner Blur
     document.getElementById("blurBanner").classList.add("blurBannerWomen");
+
     // Mayor de edad
     if (age >= 18 && age <= 105) {
       // Banner
       document
         .getElementById("banner")
         .classList.add("bg-[url('./assets/banner-2.jpg')]");
+
       // Productos
       // Producto 1
       document.getElementById("prod-1-name").innerText = "Vans Sk8";
@@ -68,6 +70,7 @@ switch (genre) {
         .classList.add(
           "bg-[url('https://images.unsplash.com/photo-1615290643080-e379930bf0cb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
         );
+
     } else if (age > 105) {
       // Edad invalida
       // Banner
@@ -111,6 +114,7 @@ switch (genre) {
         .classList.add(
           "bg-[url('https://images.unsplash.com/photo-1615290643080-e379930bf0cb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
         );
+
     } else if (age > 13 && age <= 17) {
       // Menor de 18
       // Banner
@@ -154,6 +158,7 @@ switch (genre) {
         .classList.add(
           "bg-[url('https://images.unsplash.com/photo-1600269452121-4f2416e55c28?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
         );
+
     } else {
       // Menor de 13
       // Banner
@@ -199,18 +204,21 @@ switch (genre) {
         );
     }
     break;
-  // Masculino *******************************************************************************************************************************
+
+  // Masculino
   case "masculino":
     // Cambiar el color de fondo del body
     document.getElementById("body").classList.add("bgPrincipalMen");
     // Banner Blur
     document.getElementById("blurBanner").classList.add("blurBannerMen");
+
     // Mayor de edad
     if (age >= 18 && age <= 105) {
       // Banner
       document
         .getElementById("banner")
         .classList.add("bg-[url('./assets/banner-4.jpg')]");
+
       // Productos
       // Producto 1
       document.getElementById("prod-1-name").innerText = "Jordan 1";
@@ -248,6 +256,7 @@ switch (genre) {
         .classList.add(
           "bg-[url('https://images.unsplash.com/photo-1615290643080-e379930bf0cb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
         );
+
     } else if (age > 105) {
       // Edad invalida
       // Banner
@@ -291,6 +300,7 @@ switch (genre) {
         .classList.add(
           "bg-[url('https://images.unsplash.com/photo-1615290643080-e379930bf0cb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
         );
+
     } else if (age > 13 && age <= 17) {
       // Menor de 18
       // Banner
@@ -334,8 +344,9 @@ switch (genre) {
         .classList.add(
           "bg-[url('https://images.unsplash.com/photo-1600181516264-3ea807ff44b9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
         );
+
     } else {
-      // Menor de 13
+      // Menor de 13 años
       // Banner
       document
         .getElementById("banner")
@@ -379,6 +390,7 @@ switch (genre) {
         );
     }
     break;
+
   default:
     // Genero invalido
     // Cambiar el color de fondo del body
