@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Morolla - Pequeño</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+      rel="stylesheet"
+      href="./css/style.css" />
+  </head>
+  <body id="body">
+    <div class="max-w-[1800px] px-4 m-auto fadeIn">
+      <!-- Header -->
+      <header class="flex items-center justify-center py-4">
+        <!-- Logo -->
+        <h1 class="flex justify-center">
+          <a
+            href="#"
+            class="transition-all duration-300 hover:scale-[1.1]">
+            <img
+              src="./assets/logooo.png"
+              alt="Kik"
+              class="w-20" />
+          </a>
+        </h1>
+      </header>
+      <!-- Banner -->
+      <section
+        id="banner"
+        class="w-full h-[15rem] bg-center bg-cover relative">
+        <div id="blurBanner" class="absolute top-0 left-0 w-full h-full"></div>
+      </section>
+      <!-- Title Cards - Para usuarios -->
+      <div
+        class="text-center py-8 text-xl md:text-2xl lg:text-3xl font-medium titles">
+        <h4
+          id="presentation"
+          class="flex items-end gap-2 justify-center"></h4>
+      </div>
+      <!-- Container Cards -->
+      <div class="flex items-start flex-wrap justify-center gap-14">
+        <!-- Cards -->
+        <a
+          href="#"
+          class="w-[20rem] p-4 flex flex-col gap-2 justify-between shadow-lg border-2 border-[var(--tertiary)] rounded-lg transition-all duration-200 hover:scale-[1.02] hover:shadow-xl bg-[var(--backgroundCards)] h-[32rem] backdrop-blur-md card text-center">
+          <div class="overflow-hidden rounded-lg shadow-lg w-full h-[18rem]">
+            <div
+              id="prod-1-img"
+              class="w-full h-full bg-center bg-cover imgCard"></div>
+          </div>
+          <h1
+            id="prod-1-name"
+            class="text-3xl font-semibold titles"></h1>
+          <p
+            id="prod-1-desc"
+            class="text-base generalText"></p>
+        </a>
+        <a
+          href="#"
+          class="w-[20rem] p-4 flex flex-col gap-2 justify-between shadow-lg border-2 border-[var(--tertiary)] rounded-lg transition-all duration-200 hover:scale-[1.02] hover:shadow-xl bg-[var(--backgroundCards)] h-[32rem] backdrop-blur-md card text-center">
+          <div class="overflow-hidden rounded-lg shadow-lg w-full h-[18rem]">
+            <div
+              id="prod-2-img"
+              class="w-full h-full bg-center bg-cover imgCard"></div>
+          </div>
+          <h1
+            id="prod-2-name"
+            class="text-3xl font-semibold titles"></h1>
+          <p
+            id="prod-2-desc"
+            class="text-base generalText"></p>
+        </a>
+        <a
+          href="#"
+          class="w-[20rem] p-4 flex flex-col gap-2 justify-between shadow-lg border-2 border-[var(--tertiary)] rounded-lg transition-all duration-200 hover:scale-[1.02] hover:shadow-xl bg-[var(--backgroundCards)] h-[32rem] backdrop-blur-md card text-center">
+          <div class="overflow-hidden rounded-lg shadow-lg w-full h-[18rem]">
+            <div
+              id="prod-3-img"
+              class="w-full h-full bg-center bg-cover imgCard"></div>
+          </div>
+          <h1
+            id="prod-3-name"
+            class="text-3xl font-semibold titles"></h1>
+          <p
+            id="prod-3-desc"
+            class="text-base generalText"></p>
+        </a>
+        <a
+          href="#"
+          class="w-[20rem] p-4 flex flex-col gap-2 justify-between shadow-lg border-2 border-[var(--tertiary)] rounded-lg transition-all duration-200 hover:scale-[1.02] hover:shadow-xl bg-[var(--backgroundCards)] h-[32rem] backdrop-blur-md card text-center">
+          <div class="overflow-hidden rounded-lg shadow-lg w-full h-[18rem]">
+            <div
+              id="prod-4-img"
+              class="w-full h-full bg-center bg-cover imgCard"></div>
+          </div>
+          <h1
+            id="prod-4-name"
+            class="text-3xl font-semibold titles"></h1>
+          <p
+            id="prod-4-desc"
+            class="text-base generalText"></p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="flex items-center justify-center bg-[#1E1E1E] rounded-t-2xl mt-10 text-[var(--background)] py-10">
+      <p class="text-center text-base">
+        &copy; 2024 Morolla - Pequeño. Todos los derechos reservados.
+      </p>
+    </footer>
+
+    <!-- Script -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
