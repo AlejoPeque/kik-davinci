@@ -1,15 +1,15 @@
 // 1. Preguntar el nombre, no puede ser nulo y elimina espacios en blanco
-const name = prompt("Cual es tu nombre?").trim();
+const name = prompt("Cuál es tu nombre?").trim();
 
 // 2. Preguntar el genero como default es masculino
 let genre =
-  prompt("Cual es tu genero?", "Masculino").toLowerCase().trim() || "masculino";
+  prompt("Cuál es tu genero?", "Masculino").toLowerCase().trim() || "masculino";
 
 // 3. Preguntar la edad, no puede ser nulo y debe ser un entero positivo
-let age = parseInt(prompt("Cual es tu edad?", 18));
+let age = parseInt(prompt("Cuál es tu edad?", 18));
 while (isNaN(age) || age <= 0) {
   alert("Edad invalida");
-  age = parseInt(prompt("Cual es tu edad?", 18));
+  age = parseInt(prompt("Cuál es tu edad?", 18));
 }
 
 // 4. Mostrar el nombre
