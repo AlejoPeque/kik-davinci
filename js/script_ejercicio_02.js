@@ -1,5 +1,5 @@
-// El numero
-const numberAd = 3;
+// Numero al azar
+const numberAd = Math.floor(Math.random() * 12) + 1;
 
 // Propt - Ingresar el numero
 const name = prompt("Cuál es su nombre?").trim();
